@@ -1,10 +1,10 @@
 
-#Title undefined
-## Description undefined
-## Table of contents undefined
-## Installation undefined
-## Usage undefined
-## Credits undefined
+#Title Good README Generator
+## Description App intended for generating a README easier and faster using the command line
+## Table of contents installation instructions, usage, license, contributing, tests
+## Installation clone the code into your repo and install dependencies with npm install in terminal
+## Usage answer all the questions when prompted
+## Credits npm packages
 ## License undefined
-## Contributing undefined 
-## Tests undefined
+## Contributing contact author for contributing 
+## Tests test

@@ -103,15 +103,15 @@ function generateREADME(...args) {
         tests
     ] = args;
     const readme = `
-#Title ${args.title}
-## Description ${args.description}
-## Table of contents ${args.toc}
-## Installation ${args.installation}
-## Usage ${args.usage}
-## Credits ${args.credits}
-## License ${args.license}
-## Contributing ${args.contributing} 
-## Tests ${args.tests}`
+#Title ${title}
+## Description ${description}
+## Table of contents ${toc}
+## Installation ${installation}
+## Usage ${usage}
+## Credits ${credits}
+## License ${license}
+## Contributing ${contributing} 
+## Tests ${tests}`
     return readme;
 }
 promptUser();
