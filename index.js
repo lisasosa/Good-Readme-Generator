@@ -49,18 +49,18 @@ async function promptUser() {
                 name: "credits",
                 message: "List your credits"
             },
-            // {
-            //     type: "checkbox",
-            //     name: "license",
-            //     message: "choose a license"
-            //     choices: [
-            //         "none",
-            //         "MIT Licence",
-            //         "Apache License",
-            //         "Eclipse License",
-            //         "GNU License"
-            //     ]
-            // },
+            {
+                type: "checkbox",
+                name: "license",
+                message: "choose a license",
+                choices: [
+                    "none",
+                    "MIT Licence",
+                    "Apache License",
+                    "Eclipse License",
+                    "GNU License"
+                ]
+            },
             {
                 type: "input",
                 name: "badge",
