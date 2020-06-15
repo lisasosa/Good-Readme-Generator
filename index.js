@@ -138,7 +138,7 @@ ${contributing}
 ${tests}
 
 ## Questions 
-https://github.com/${github}
+GitHub profile: https://github.com/${github}
 Contact Email: ${email}`
     return readme;
 }

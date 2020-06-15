@@ -1,31 +1,31 @@
   
 # Title 
-DFHDHDH
+Good README Generator
 
 ## Description 
-DHDYHDD
+App intended for generating a README easier and faster using the command line
 
 ## Table of contents 
-DHDSWDSH
+Installation instructions, usage, license, contributing, tests
 
 ## Installation 
-DHHDHSDHD
+Clone the code into your repo and install dependencies with npm install in terminal
 
 ## Usage 
-DHEDDJ
+Answer all the questions in the command line when prompted
 
 ## Credits 
-DHGDD
+Inquirer package
 
 ## License 
-Eclipse License
+MIT Licence
 
 ## Contributing 
-DGSGSG 
+Contact the author at the email address provided below for questions about contributing 
 
 ## Tests 
-DDHDDH
+test
 
 ## Questions 
-https://github.com/DHDGSS
-Contact Email: SGSTG
+GitHub profile: https://github.com/lisasosa
+Contact Email: sosa.elizabeth@yamil.com
