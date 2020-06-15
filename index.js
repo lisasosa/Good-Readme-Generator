@@ -3,10 +3,10 @@ const util = require('util');
 const inquirer = require('inquirer');
 
 
-const writeFileAsync = util.promisify(fs.writeFile); //fs.writFileSync(file, data)
+const writeFileAsync = util.promisify(fs.writeFile);
 
 async function promptUser() {
-    // return inquirer.prompt = [{
+
     try {
         const {
             title,
@@ -80,23 +80,23 @@ async function promptUser() {
             {
                 type: "input",
                 name: "email",
-                message: "Enter your Email addres"
+                message: "Enter your Email address"
             }
 
         ]);
         const readme = generateREADME(title, description, toc, installation, usage, credits, license, contributing, tests, github, email);
         await writeFileAsync('./README.md', readme)
-        // Console.log("checking file")
+
     } catch (error) {
         throw error;
     }
-    // console.log('Title', title)
+
 }
 
 
 
 function generateREADME(...args) {
-    //     return `#Title ${answers.title}`
+
     const [title,
         description,
         toc,
@@ -109,28 +109,37 @@ function generateREADME(...args) {
         github,
         email
     ] = args;
-    const readme = `
-#Title 
+    const readme = `  
+# Title 
 ${title}
+
 ## Description 
 ${description}
+
 ## Table of contents 
 ${toc}
+
 ## Installation 
 ${installation}
+
 ## Usage 
 ${usage}
+
 ## Credits 
 ${credits}
+
 ## License 
 ${license}
+
 ## Contributing 
 ${contributing} 
+
 ## Tests 
 ${tests}
+
 ## Questions 
 https://github.com/${github}
-contact information: ${email}`
+Contact Email: ${email}`
     return readme;
 }
 promptUser();
