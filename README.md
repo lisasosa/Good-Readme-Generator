@@ -1,7 +1,9 @@
 Links:
-readmeappvideo.webm
+GitHub links
 https://github.com/lisasosa/Good-Readme-Generator
 https://lisasosa.github.io/Good-Readme-Generator/.
+Link to App video
+https://drive.google.com/file/d/1U1u7l6_vN7950dC9PIgpCFH57m5v31j2/view
 
 # Title
 
