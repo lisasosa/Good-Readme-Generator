@@ -1,31 +1,45 @@
-  
-# Title 
+Links:
+readmeappvideo.webm
+https://github.com/lisasosa/Good-Readme-Generator
+https://lisasosa.github.io/Good-Readme-Generator/.
+
+# Title
+
 Good README Generator
 
-## Description 
+## Description
+
 App intended for generating a README easier and faster using the command line
 
-## Table of contents 
+## Table of contents
+
 Installation instructions, usage, license, contributing, tests
 
-## Installation 
+## Installation
+
 Clone the code into your repo and install dependencies with npm install in terminal
 
-## Usage 
+## Usage
+
 Answer all the questions in the command line when prompted
 
-## Credits 
+## Credits
+
 Inquirer package
 
-## License 
+## License
+
 MIT Licence
 
-## Contributing 
-Contact the author at the email address provided below for questions about contributing 
+## Contributing
 
-## Tests 
+Contact the author at the email address provided below for questions about contributing
+
+## Tests
+
 test
 
-## Questions 
+## Questions
+
 GitHub profile: https://github.com/lisasosa
 Contact Email: sosa.elizabeth@yamil.com
