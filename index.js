@@ -16,9 +16,10 @@ async function promptUser() {
             usage,
             credits,
             license,
-            // badge,
             contributing,
-            tests
+            tests,
+            github,
+            email
         } = await inquirer.prompt([{
                 type: "input",
                 name: "title",
@@ -63,11 +64,6 @@ async function promptUser() {
             },
             {
                 type: "input",
-                name: "badge",
-                message: "Enter your badge"
-            },
-            {
-                type: "input",
                 name: "contributing",
                 message: "What are the rules for contributing"
             },
@@ -76,11 +72,21 @@ async function promptUser() {
                 name: "tests",
                 message: "Write tests for your app here"
             },
+            {
+                type: "input",
+                name: "github",
+                message: "Enter your GitHub Username"
+            },
+            {
+                type: "input",
+                name: "email",
+                message: "Enter your Email addres"
+            }
 
         ]);
-        const readme = generateREADME(title, description, toc, installation, usage, credits, license, contributing, tests);
+        const readme = generateREADME(title, description, toc, installation, usage, credits, license, contributing, tests, github, email);
         await writeFileAsync('./README.md', readme)
-        Console.log("checking file")
+        // Console.log("checking file")
     } catch (error) {
         throw error;
     }
@@ -98,20 +104,33 @@ function generateREADME(...args) {
         usage,
         credits,
         license,
-        // badge,
         contributing,
-        tests
+        tests,
+        github,
+        email
     ] = args;
     const readme = `
-#Title ${title}
-## Description ${description}
-## Table of contents ${toc}
-## Installation ${installation}
-## Usage ${usage}
-## Credits ${credits}
-## License ${license}
-## Contributing ${contributing} 
-## Tests ${tests}`
+#Title 
+${title}
+## Description 
+${description}
+## Table of contents 
+${toc}
+## Installation 
+${installation}
+## Usage 
+${usage}
+## Credits 
+${credits}
+## License 
+${license}
+## Contributing 
+${contributing} 
+## Tests 
+${tests}
+## Questions 
+https://github.com/${github}
+contact information: ${email}`
     return readme;
 }
 promptUser();
